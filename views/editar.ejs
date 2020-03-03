@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Produtos - Editar</title>
+</head>
+<body>
+    <h1>Editando Produtos</h1>
+    <form method="POST">
+        Id: <input type="text" name="id" readonly><br>
+        Nome: <input type="text" name="nome" placeholder="Nome" value="<%=req.body.nome%>"> <br>
+        Código de Barra: <input type="text" name="CodBarra" placeholder="Código" value="<%=req.body.CodBarra%>"><br>
+        Preço: <input type="text" name="preco" placeholder="Preço" value="<%=req.body.preco%>"> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
